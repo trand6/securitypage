@@ -2,31 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security</title>
-
-    <!-- Custom Style -->
-    <link rel ="stylesheet" href="./css/style.css">
+    <title>Cyber Security - Why is it important?</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-    <!-- ------------------- Navigation ------------------------------ -->
-
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray">Cyber Security</a>
+    <div class="hero">
+    <div class="nav-bar">
+        <div class ="nav-logo">
+            <img src="/images/cyber_icon.png">
+        </div>    
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-close" onclick="closeMenu()"></i>
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>TIPS</li></a>
+            </ul>
+            <button type="button" class="btn">SIGN UP</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>The fast <span>changes in technology<br></span> will cause a boom in cyberattacks.</h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
             </div>
         </div>
-    </nav>
-
-
-
-
-
-    <!-- ------------------- Navigation ------------------------------ -->
-
-    <!-- Custom Javascript File -->
-    <script src="./js/main,js"></script>
+        <div class="notifications">
+            <div class="contents">
+                <small>Subscribe to<a href="https://www.youtube.com/channel/UCY_laWYwPgB9eyxMdPjedcQ">RPISEC</a>and learn more about computer security skills!</small>
+                <p><a href="">PREV</a><a href="">NEXT</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="/images/rpisec.png">
+            </div>
+        </div>
+    </div>
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+        </script>
 </body>
 </html>
